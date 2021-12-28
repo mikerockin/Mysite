@@ -3,7 +3,7 @@
 
 <html>
     <head>
-        <title>Django Girls blog</title>
+        <title>История одного мгновения</title>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic" rel="stylesheet" type="text/css">
@@ -11,6 +11,12 @@
     </head>
 <body>
     <div class="page-header">
+        {% if user.is_authenticated %}
+        <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+        <p class="top-menu">Привет {{ user.username }} <small>(<a href="{% url 'logout' %}">Log out</a>)</small></p>
+        {% else %}
+            <a href="{% url 'login' %}" class="top-menu"><span class="glyphicon glyphicon-lock"></span></a>
+        {% endif %}
         <h1><a href="/">History of one instant</a></h1>
     </div>
     <div class="content container">
@@ -21,6 +27,7 @@
             </div>
         </div>
     </div>
+
 </body>
 
 </html>
