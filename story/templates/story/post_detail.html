@@ -18,5 +18,28 @@
         <p><p align="justify" style="font-family: 'Comic Sans MS'; font-size: large; color:black;">{{ post.text|linebreaksbr }}</p></p>
     </div>
 
+{% for comment in comments %}
+  <div class="comment">
+    <p class="info"><h4>
+      Комментировал {{ comment.name }} {{ comment.created }}
+  </h4>
+    </p>
+      <h5><p style="font-family: 'Tahoma'; "{{ comment.body|linebreaks }}</p></h5>
+  </div>
+{% empty %}
+  <p>Здесь пока нет комментариев</p>
+{% endfor %}
+{% if new_comment %}
+  <h5>Комментарий был добавлен</h5>
+{% else %}
+  <h3>Добавить новый комментарий</h3>
+  <form action="." method="post">
+    {{ comment_form.as_p }}
+    {% csrf_token %}
+    <p><input type="submit" value="Добавить комментарий"></p>
+  </form>
+{% endif %}
+
+
 
 {% endblock %}
