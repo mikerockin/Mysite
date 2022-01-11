@@ -3,25 +3,7 @@ from django.utils import timezone
 from .models import Post
 from .forms import PostForm
 from django.contrib.auth.decorators import login_required
-from django.views.generic import CreateView
-from django.core.files.storage import FileSystemStorage
-from django.contrib.auth.forms import UserCreationForm
-from django.contrib.auth import login
 
-
-
-def register(request):
-    if request.method != 'POST':
-        form = UserCreationForm()
-    else:
-        form = UserCreationForm(data=request.POST)
-        if form.is_valid():
-            new_user = form.save()
-            login(request, new_user)
-            return redirect('learning_logs:index')
-
-    context = {'form': form}
-    return render(request, 'story/register.html', context)
 
 def post_list(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
@@ -29,7 +11,6 @@ def post_list(request):
     request.session['num_visits'] = num_visits + 1
     return render(request, 'story/post_list.html',
                   context={'posts': posts, 'num_visits':num_visits},)
-
 
 
 def post_detail(request, pk):
@@ -47,7 +28,7 @@ def post_new(request):
             post.author = request.user
             post.published_date = timezone.now()
             post.save()
-            return redirect('post_detail', pk=post.pk)
+            return redirect('story:post_detail', pk=post.pk)
     else:
         form = PostForm()
     return render(request, 'story/post_edit.html', {'form': form})

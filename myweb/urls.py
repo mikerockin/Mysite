@@ -18,15 +18,11 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 from django.contrib.auth import views
-from story import views
 
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('accounts/login/', views.LoginView.as_view(), name='login'),
-    path('accounts/login/', views.LogoutView.as_view(next_page='/'), name='logout'),
-    path('accounts/', include('django.contrib.auth.urls')),
     path('users/', include('users.urls')),
     path('', include('story.urls')),
 
