@@ -13,6 +13,7 @@ def post_list(request):
                   context={'posts': posts, 'num_visits':num_visits},)
 
 
+@login_required
 def post_detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
     comments = post.comments.filter(active=True)
