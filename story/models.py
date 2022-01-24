@@ -1,11 +1,13 @@
 from django.conf import settings
 from django.db import models
 from django.utils import timezone
-
-
+from pygments.lexers import get_lexer_by_name
+from pygments.formatters.html import HtmlFormatter
+from pygments import highlight
+from django.contrib.auth.models import User
 
 class Post(models.Model):
-    author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    author = models.ForeignKey('auth.User', related_name='posts', on_delete=models.CASCADE)
     title = models.CharField(max_length=200, verbose_name="Название")
     text = models.TextField(verbose_name="История на снимке")
     image = models.ImageField(upload_to='images/%Y-%m-%d/', verbose_name="Фото")
@@ -19,8 +21,8 @@ class Post(models.Model):
         return self.title
 
 class Comment(models.Model):
+    author = models.ForeignKey('auth.User', related_name='comments', on_delete=models.CASCADE)
     post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name='comments')
-    name = models.CharField(max_length=50, verbose_name='Ваше имя')
     body = models.TextField(verbose_name='Текст')
     created = models.DateTimeField(auto_now_add=True)
     active = models.BooleanField(default=True)
@@ -29,4 +31,4 @@ class Comment(models.Model):
         ordering = ('created',)
 
     def __str__(self):
-        return 'Комментировано {} в {}'.format(self.name, self.post)
+        return 'Комментировано {} в {}'.format(self.author, self.post)

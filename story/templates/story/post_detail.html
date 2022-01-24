@@ -21,7 +21,7 @@
 {% for comment in comments %}
   <div class="comment">
     <p class="info"><h4>
-      Комментировал {{ comment.name }} {{ comment.created }}
+      Комментировал {{ comment.author }} {{ comment.created }}
   </h4>
     </p>
       <h5><p style="font-family: 'Tahoma'; "{{ comment.body|linebreaks }}</p></h5>

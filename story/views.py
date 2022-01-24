@@ -1,9 +1,15 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.utils import timezone
-from .models import Post, Comment
 from .forms import PostForm, CommentForm
 from django.contrib.auth.decorators import login_required
-
+from rest_framework import viewsets, generics
+from .serializers import PostSerializer, CommentSerializer, UserSerializer
+from .models import Post, Comment
+from django.contrib.auth.models import User
+from rest_framework import viewsets
+from rest_framework.decorators import action
+from rest_framework.response import Response
+from rest_framework import permissions
 
 def post_list(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
@@ -22,6 +28,7 @@ def post_detail(request, pk):
         comment_form = CommentForm(data=request.POST)
         if comment_form.is_valid():
             new_comment = comment_form.save(commit=False)
+            new_comment.author = request.user
             new_comment.post = post
             new_comment.save()
     else:
@@ -60,3 +67,14 @@ def post_edit(request, pk):
         form = PostForm(instance=post)
     return render(request, 'story/post_edit.html', {'form': form})
 
+class PostViewSet(viewsets.ModelViewSet):
+    queryset = Post.objects.all().order_by('published_date')
+    serializer_class = PostSerializer
+
+class CommentViewSet(viewsets.ModelViewSet):
+    queryset = Comment.objects.all().order_by('post')
+    serializer_class = CommentSerializer
+
+class UserViewSet(viewsets.ReadOnlyModelViewSet):
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
