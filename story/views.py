@@ -35,7 +35,7 @@ def post_detail(request, pk):
 
 @login_required
 def post_new(request):
-    if request.method == 'POST' and request.FILES:
+    if request.method == 'POST':
         form = PostForm(request.POST, request.FILES)
         if form.is_valid():
             post = form.save(commit=False)

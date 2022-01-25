@@ -20,36 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd6dcebc-a657-4fae-86c8-dc7c9e13021f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/story/migrations/0022_alter_comment_author.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story/migrations/0023_alter_comment_author_alter_post_author.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/noimage.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/2022-01-08/20211025_114623.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/2022-01-10/20211025_114623.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/2022-01-10/20211025_114623_v1hnvt6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/2022-01-11/20211025_114623.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/2022-01-11/20211025_114623_EE4IgH7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/2022-01-20/24rJAyLuxx.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/2022-01-20/B2Uu5MnUCC.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/2022-01-20/Telegram_jbKNgPgkBb.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/2022-01-24/B2Uu5MnUCC.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/2022-01-24/Telegram_f98I5FGM0E.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/2022-01-24/Telegram_f98I5FGM0E_Q7NnSG6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/2022-01-24/Telegram_f98I5FGM0E_QzUVwsM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/2022-01-24/Telegram_f98I5FGM0E_d5jqW4n.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/2022-01-24/ckS7jh3gaj.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/2022-01-24/nckGnZpWux.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/abstrakciya-1920x1080-abstrakciya-21253.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/В_атаку.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/львиный_логотип.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/львиный_логотип_9AbFiUN.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/нападение.jfif" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/myweb/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/myweb/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/myweb/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/story/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/story/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/story/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/story/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/story/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/story/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/templates/registration/logged_out.html" beforeDir="false" afterPath="$PROJECT_DIR$/users/templates/registration/logged_out.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/users/templates/registration/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +36,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -75,13 +52,15 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/media/images" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Mikhail\PycharmProjects\Mysite_2022\media\images" />
       <recent name="C:\Users\Mikhail\PycharmProjects\Mysite_2022" />
     </key>
   </component>
@@ -133,7 +112,7 @@
       <workItem from="1643021482081" duration="13283000" />
       <workItem from="1643041807112" duration="154000" />
       <workItem from="1643090730869" duration="302000" />
-      <workItem from="1643091955988" duration="5213000" />
+      <workItem from="1643091955988" duration="12218000" />
     </task>
     <servers />
   </component>

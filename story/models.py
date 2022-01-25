@@ -6,7 +6,7 @@ class Post(models.Model):
     author = models.ForeignKey('auth.User', related_name='posts', on_delete=models.CASCADE, null=True)
     title = models.CharField(max_length=200, verbose_name="Название")
     text = models.TextField(verbose_name="История на снимке")
-    image = models.ImageField(upload_to='images/%Y-%m-%d/', verbose_name="Фото", null=True)
+    image = models.ImageField(upload_to='images/%Y-%m-%d/', default='images/noimage.jpg', verbose_name="Фото", null=True)
     published_date = models.DateTimeField(blank=True, null=True)
 
     def publish(self):
