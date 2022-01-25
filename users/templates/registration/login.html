@@ -3,16 +3,16 @@
 {% block content %}
 
 {% if form.errors %}
-  <p>Ваше имя пользователя и пароль не совпадали. Пожалуйста,
-                                         попробуйте еще раз.</p>
+  <h4><p style="font-family: 'Century Gothic'; color:whitesmoke;">Ваше имя пользователя и пароль не совпадали. Пожалуйста,
+      попробуйте еще раз.</p></h4>
 {% endif %}
 
 {% if next %}
   {% if user.is_authenticated %}
-    <p> Вы не имеете доступа к этой странице. Войдите в систему с
-                                            другими параметрами</p>
+    <h4><p style="font-family: 'Century Gothic'; color:whitesmoke;">Вы не имеете доступа к этой странице. Войдите в систему с
+        другими параметрами</p></h4>
   {% else %}
-    <p> Войдите в систему, чтобы увидеть эту страницу.</p>
+      <h4><p style="font-family: 'Century Gothic'; color:whitesmoke;">Войдите в систему, чтобы увидеть эту страницу.</p></h4>
   {% endif %}
 {% endif %}
 

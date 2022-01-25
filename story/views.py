@@ -2,14 +2,10 @@ from django.shortcuts import render, get_object_or_404, redirect
 from django.utils import timezone
 from .forms import PostForm, CommentForm
 from django.contrib.auth.decorators import login_required
-from rest_framework import viewsets, generics
 from .serializers import PostSerializer, CommentSerializer, UserSerializer
 from .models import Post, Comment
 from django.contrib.auth.models import User
 from rest_framework import viewsets
-from rest_framework.decorators import action
-from rest_framework.response import Response
-from rest_framework import permissions
 
 def post_list(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
