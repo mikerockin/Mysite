@@ -20,11 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd6dcebc-a657-4fae-86c8-dc7c9e13021f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/media/images/noimage.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myweb/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/myweb/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myweb/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/myweb/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/story/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/story/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/story/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/story/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/story/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,8 +34,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -56,7 +55,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/media/images" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Old_versions_projects/MyWeb" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -112,7 +111,10 @@
       <workItem from="1643021482081" duration="13283000" />
       <workItem from="1643041807112" duration="154000" />
       <workItem from="1643090730869" duration="302000" />
-      <workItem from="1643091955988" duration="12218000" />
+      <workItem from="1643091955988" duration="18292000" />
+      <workItem from="1643130174490" duration="204000" />
+      <workItem from="1643130779468" duration="216000" />
+      <workItem from="1643131548119" duration="4869000" />
     </task>
     <servers />
   </component>
@@ -132,9 +134,17 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="421" y="92" key="FileChooserDialogImpl" timestamp="1643091033765">
+    <state x="93" y="93" width="1095" height="487" key="DiffContextDialog" timestamp="1643130378871">
       <screen x="0" y="0" width="1280" height="672" />
     </state>
-    <state x="421" y="92" key="FileChooserDialogImpl/0.0.1280.672/-1920.0.1920.1032@0.0.1280.672" timestamp="1643091033765" />
+    <state x="93" y="93" width="1095" height="487" key="DiffContextDialog/0.0.1280.672@0.0.1280.672" timestamp="1643130378871" />
+    <state x="421" y="92" key="FileChooserDialogImpl" timestamp="1643112827626">
+      <screen x="0" y="0" width="1280" height="672" />
+    </state>
+    <state x="421" y="92" key="FileChooserDialogImpl/0.0.1280.672/-1920.0.1920.1032@0.0.1280.672" timestamp="1643112827626" />
+    <state x="402" y="34" key="VCS.ChangeListViewerDialog" timestamp="1643130288484">
+      <screen x="0" y="0" width="1280" height="672" />
+    </state>
+    <state x="402" y="34" key="VCS.ChangeListViewerDialog/0.0.1280.672@0.0.1280.672" timestamp="1643130288484" />
   </component>
 </project>

@@ -6,6 +6,8 @@ from .serializers import PostSerializer, CommentSerializer, UserSerializer
 from .models import Post, Comment
 from django.contrib.auth.models import User
 from rest_framework import viewsets
+from rest_framework.permissions import IsAuthenticatedOrReadOnly
+
 
 def post_list(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
@@ -32,6 +34,7 @@ def post_detail(request, pk):
     return render(request, 'story/post_detail.html',
                   context={'post': post, 'comments': comments, 'new_comment': new_comment, 'comment_form': comment_form}
     )
+
 
 @login_required
 def post_new(request):
@@ -66,6 +69,7 @@ def post_edit(request, pk):
 class PostViewSet(viewsets.ModelViewSet):
     queryset = Post.objects.all().order_by('published_date')
     serializer_class = PostSerializer
+    permission_classes = (IsAuthenticatedOrReadOnly,)
 
 class CommentViewSet(viewsets.ModelViewSet):
     queryset = Comment.objects.all().order_by('post')
@@ -74,3 +78,4 @@ class CommentViewSet(viewsets.ModelViewSet):
 class UserViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = User.objects.all()
     serializer_class = UserSerializer
+
