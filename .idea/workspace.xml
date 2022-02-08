@@ -20,9 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd6dcebc-a657-4fae-86c8-dc7c9e13021f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/API_readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Mysite_2022.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Mysite_2022.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myweb/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/myweb/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/myweb/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/story/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/story/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/story/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/story/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/story/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/story/views.py" afterDir="false" />
     </list>
@@ -30,6 +37,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -55,12 +65,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Old_versions_projects/MyWeb" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Mikhail\PycharmProjects\Mysite_2022\media\images" />
       <recent name="C:\Users\Mikhail\PycharmProjects\Mysite_2022" />
+      <recent name="C:\Users\Mikhail\PycharmProjects\Mysite_2022\media\images" />
     </key>
   </component>
   <component name="RunManager">
@@ -114,7 +125,28 @@
       <workItem from="1643091955988" duration="18292000" />
       <workItem from="1643130174490" duration="204000" />
       <workItem from="1643130779468" duration="216000" />
-      <workItem from="1643131548119" duration="4869000" />
+      <workItem from="1643131548119" duration="7917000" />
+      <workItem from="1643182422123" duration="1221000" />
+      <workItem from="1643199579590" duration="476000" />
+      <workItem from="1643200195528" duration="4424000" />
+      <workItem from="1643271736823" duration="1023000" />
+      <workItem from="1643283603904" duration="1322000" />
+      <workItem from="1643295753996" duration="10000" />
+      <workItem from="1643356357026" duration="7599000" />
+      <workItem from="1643436687114" duration="1244000" />
+      <workItem from="1643439341626" duration="95000" />
+      <workItem from="1643607084530" duration="388000" />
+      <workItem from="1643607841699" duration="256000" />
+      <workItem from="1643706247931" duration="2083000" />
+      <workItem from="1643718402086" duration="1069000" />
+      <workItem from="1643782394111" duration="1275000" />
+      <workItem from="1643886329045" duration="354000" />
+      <workItem from="1643901920887" duration="636000" />
+      <workItem from="1643960257700" duration="439000" />
+      <workItem from="1644126235195" duration="6801000" />
+      <workItem from="1644146281617" duration="1624000" />
+      <workItem from="1644211814161" duration="5757000" />
+      <workItem from="1644304439659" duration="920000" />
     </task>
     <servers />
   </component>
@@ -134,14 +166,22 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1644146007144">
+      <screen x="0" y="0" width="1280" height="672" />
+    </state>
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.672/-1920.0.1920.1032@0.0.1280.672" timestamp="1644146007144" />
     <state x="93" y="93" width="1095" height="487" key="DiffContextDialog" timestamp="1643130378871">
       <screen x="0" y="0" width="1280" height="672" />
     </state>
     <state x="93" y="93" width="1095" height="487" key="DiffContextDialog/0.0.1280.672@0.0.1280.672" timestamp="1643130378871" />
-    <state x="421" y="92" key="FileChooserDialogImpl" timestamp="1643112827626">
+    <state x="421" y="92" key="FileChooserDialogImpl" timestamp="1644212734862">
       <screen x="0" y="0" width="1280" height="672" />
     </state>
-    <state x="421" y="92" key="FileChooserDialogImpl/0.0.1280.672/-1920.0.1920.1032@0.0.1280.672" timestamp="1643112827626" />
+    <state x="421" y="92" key="FileChooserDialogImpl/0.0.1280.672/-1920.0.1920.1032@0.0.1280.672" timestamp="1644212734862" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1643607954616">
+      <screen x="0" y="0" width="1280" height="672" />
+    </state>
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.672/-1920.0.1920.1032@0.0.1280.672" timestamp="1643607954616" />
     <state x="402" y="34" key="VCS.ChangeListViewerDialog" timestamp="1643130288484">
       <screen x="0" y="0" width="1280" height="672" />
     </state>

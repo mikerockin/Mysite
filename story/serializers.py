@@ -1,7 +1,7 @@
 from rest_framework import serializers
 from .models import Post, Comment
 from django.contrib.auth.models import User
-
+from django.utils import timezone
 
 class CommentSerializer(serializers.ModelSerializer):
     author = serializers.ReadOnlyField(source='author.username')
@@ -17,7 +17,7 @@ class PostSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Post
-        fields = ('id', 'author', 'title', 'text', 'published_date', 'image', 'comments')
+        fields = ('id', 'author', 'title', 'text', 'image', 'published_date',  'comments')
 
 class UserSerializer(serializers.ModelSerializer):
     posts = PostSerializer(many=True, read_only=True)

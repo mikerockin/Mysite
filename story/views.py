@@ -69,7 +69,6 @@ def post_edit(request, pk):
 class PostViewSet(viewsets.ModelViewSet):
     queryset = Post.objects.all().order_by('published_date')
     serializer_class = PostSerializer
-    permission_classes = (IsAuthenticatedOrReadOnly,)
 
 class CommentViewSet(viewsets.ModelViewSet):
     queryset = Comment.objects.all().order_by('post')
