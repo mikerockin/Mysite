@@ -21,6 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="dd6dcebc-a657-4fae-86c8-dc7c9e13021f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/myweb/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +137,11 @@
       <workItem from="1644126235195" duration="6801000" />
       <workItem from="1644146281617" duration="1624000" />
       <workItem from="1644211814161" duration="5757000" />
-      <workItem from="1644304439659" duration="1607000" />
+      <workItem from="1644304439659" duration="2825000" />
+      <workItem from="1644308400903" duration="1060000" />
+      <workItem from="1644310670523" duration="46000" />
+      <workItem from="1644409390453" duration="674000" />
+      <workItem from="1644474127698" duration="1697000" />
     </task>
     <servers />
   </component>
