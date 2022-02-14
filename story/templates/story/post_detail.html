@@ -9,6 +9,11 @@
             </div>
         {% endif %}
         <a class="btn btn-default" href="{% url 'story:post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+        <h4><p>
+            <center>
+                <a href="{% url "story:post_share" post.id %}">Поделиться</a>
+            </center>
+        </h4></p>
         <center>
             <h1>{{ post.title }}</h1>
         </center>

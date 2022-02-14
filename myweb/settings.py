@@ -83,12 +83,12 @@ WSGI_APPLICATION = 'myweb.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ.get('POSTGRES_NAME'),
-        'USER': os.environ.get('POSTGRES_USER'),
-        'PASSWORD': os.environ.get('POSTGRES_PASSWORD'),
-        'HOST': 'db',
-        'PORT': 5432,
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'Mysite2022',
+        'USER': 'postgres',
+        'PASSWORD': '19881988',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
@@ -140,10 +140,8 @@ MEDIA_ROOT = BASE_DIR / 'media'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-REST_FRAMEWORK = {
-    'DEFAULT_AUTHENTICATION_CLASSES': [
-        'rest_framework.authentication.TokenAuthentication',
-    ],
-    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
-    'PAGE_SIZE': 25,
-}
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'mrmikhail888@gmail.com'
+EMAIL_HOST_PASSWORD = 'yXZbRu2aFe'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True

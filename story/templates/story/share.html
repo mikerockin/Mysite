@@ -1,0 +1,18 @@
+{% extends 'story/base.html' %}
+
+{% block title %}Поделиться{% endblock %}
+{% block content %}
+    {% if sent %}
+        <h1>E-mail успешно отправлен</h1>
+        <p>
+            "{{ post.title }}" был успешно отправлен {{ cd.to }}.
+        </p>
+    {% else %}
+        <h1>Поделитья "{{ post.title }}" по e-mail</h1>
+        <form action="." method="post">
+            {{ form.as_p }}
+            {% csrf_token %}
+            <input type="submit" value="Отправить e-mail">
+        </form>
+    {% endif %}
+{% endblock %}
