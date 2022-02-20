@@ -3,8 +3,10 @@ from rest_framework import permissions
 from django.urls import path, include, re_path
 from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
-from rest_framework.authtoken.views import obtain_auth_token
+from story.sitemaps import PostSitemap
+from django.contrib.sitemaps.views import sitemap
 
+sitemaps = { 'posts': PostSitemap,}
 
 schema_view = get_schema_view(
    openapi.Info(
@@ -19,6 +21,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('users/', include('users.urls')),
     path('', include('story.urls')),
+    path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
     re_path(r'^swagger(?P<format>\.json|\.yaml)$', schema_view.without_ui(cache_timeout=0), name='schema-json'),
     re_path(r'^api/docs/swagger/$', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     re_path(r'^api/docs/redoc/$', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),

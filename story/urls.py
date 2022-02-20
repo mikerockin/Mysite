@@ -1,4 +1,4 @@
-from django.urls import path, include
+from django.urls import path, include, re_path
 from django.conf.urls.static import static
 from rest_framework import routers
 from django.conf import settings
@@ -20,7 +20,9 @@ urlpatterns = [
     path('post/new/', views.post_new, name='post_new'),
     path('post/<int:pk>/edit/', views.post_edit, name='post_edit'),
     path('post/<int:pk>/share/', views.post_share, name='post_share'),
+    path('search/', views.post_search, name='post_search'),
     path('', views.post_list, name='post_list'),
+    re_path(r'^tag/(?P<tag_slug>[-\w]+)/$', views.post_list, name='post_list_by_tag'),
 
 
 ]

@@ -1,4 +1,5 @@
 {% extends 'story/base.html' %}
+{% load story_tags %}
 
 {% block content %}
     <div class="post">
@@ -8,6 +9,30 @@
                 <p>Автор: {{ post.author }}</p>
             </div>
         {% endif %}
+
+    <h2>Похожие посты</h2>
+{% for post in similar_posts %}
+    <p>
+        <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
+    </p>
+{% empty %}
+    Похожих постов не найдено
+{% endfor %}
+                <p class="tags">
+    Теги:
+    {% for tag in post.tags.all %}
+        <a href="{% url "story:post_list_by_tag" tag.slug %}">
+            {{ tag.name }}
+        </a>
+        {% if not forloop.last %}, {% endif %}
+    {% endfor %}
+            </p>
+
+        {% with comments.count as total_comments %}
+            <h4>
+                {{ total_comments }} comment{{ total_comments|pluralize }}
+            </h4>
+        {% endwith %}
         <a class="btn btn-default" href="{% url 'story:post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
         <h4><p>
             <center>
@@ -20,20 +45,30 @@
         <center>
             <img src="{{ post.image.url}}" style="width:640px; height: 480px;">
         </center>
-        <p><p align="justify" style="font-family: 'Comic Sans MS'; font-size: large; color:black;">{{ post.text|linebreaksbr }}</p></p>
+        <p><p align="justify" style="font-family: 'Comic Sans MS'; font-size: large; color:black;">{{ post.text|markdown }}</p></p>
     </div>
+                <p class="tags">
+    Теги:
+    {% for tag in post.tags.all %}
+        <a href="{% url "story:post_list_by_tag" tag.slug %}">
+            {{ tag.name }}
+        </a>
+        {% if not forloop.last %}, {% endif %}
+    {% endfor %}
+            </p>
 
 {% for comment in comments %}
   <div class="comment">
     <p class="info"><h4>
-      Комментировал {{ comment.author }} {{ comment.created }}
+      Комментарий {{ forloop.counter }} оставил  {{ comment.name }} {{ comment.created }}
   </h4>
     </p>
-      <h5><p style="font-family: 'Tahoma'; "{{ comment.body|linebreaks }}</p></h5>
+      <h5><p style="font-family: 'Tahoma'; " {{ comment.body|linebreaks }}</p></h5>
   </div>
 {% empty %}
   <p>Здесь пока нет комментариев</p>
 {% endfor %}
+
 {% if new_comment %}
   <h5>Комментарий был добавлен</h5>
 {% else %}

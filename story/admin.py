@@ -11,9 +11,9 @@ class PostAdmin(admin.ModelAdmin):
     ordering = ['published_date']
 
 class CommentAdmin(admin.ModelAdmin):
-    list_display = ('author', 'email', 'post', 'created', 'active')
-    list_filter = ('active', 'created')
-    search_fields = ('author', 'email', 'body')
+    list_display = ('name', 'email', 'post', 'created', 'active')
+    list_filter = ('active', 'created', 'updated')
+    search_fields = ('name', 'email', 'body')
 
 
 admin.site.register(Post, PostAdmin)

@@ -20,62 +20,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd6dcebc-a657-4fae-86c8-dc7c9e13021f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/story/templates/story/share.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/Speeding 1x1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/story/sitemaps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/story/templates/story/latest_posts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/story/templates/story/pagination.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/story/templates/story/search.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/story/templatetags/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/story/templatetags/story_tags.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/db/base/13757/16543" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/base/13757/16543" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/db/base/13757/16548" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/base/13757/16548" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/db/base/13757/16550" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/base/13757/16550" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/db/base/13757/16551" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/base/13757/16551" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/db/base/13757/pg_internal.init" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/base/13757/pg_internal.init" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/db/global/pg_control" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/global/pg_control" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/db/global/pg_internal.init" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/global/pg_internal.init" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/db/pg_stat/db_0.stat" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/pg_stat/db_0.stat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/db/pg_stat/db_13757.stat" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/pg_stat/db_13757.stat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/db/pg_stat/global.stat" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/pg_stat/global.stat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/db/pg_wal/000000010000000000000001" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/pg_wal/000000010000000000000001" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/db/pg_xact/0000" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/pg_xact/0000" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/2022-01-25/Telegram_f98I5FGM0E.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/2022-01-26/noimage.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/2022-01-26/нападение.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/2022-01-26/нападение_g8XgdKB.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/myweb/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/myweb/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/myweb/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/story/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/story/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/story/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/story/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/story/migrations/0002_post_image.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/story/migrations/0003_alter_post_image.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/story/migrations/0004_alter_post_image.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/story/migrations/0005_alter_post_image.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/story/migrations/0006_alter_post_image.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/story/migrations/0007_alter_post_image_alter_post_text_alter_post_title.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/story/migrations/0008_comment.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/story/migrations/0009_comment_active.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/story/migrations/0010_alter_comment_body_alter_comment_name.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/story/migrations/0011_alter_comment_name.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/story/migrations/0012_alter_comment_post_alter_post_author.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/story/migrations/0013_alter_post_author.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/story/migrations/0014_comment_author_post_highlighted_alter_post_author.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/story/migrations/0015_remove_comment_post_post_comments.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/story/migrations/0016_remove_comment_name.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/story/migrations/0017_remove_post_comments_comment_post.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/story/migrations/0018_remove_post_highlighted.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/story/migrations/0019_remove_comment_post_post_comment.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/story/migrations/0020_remove_post_comment_post_comment.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/story/migrations/0021_remove_post_comment_comment_post.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/story/migrations/0022_alter_comment_author.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/story/migrations/0023_alter_comment_author_alter_post_author.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/story/migrations/0024_alter_comment_author_alter_post_image.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/story/migrations/0025_alter_post_image.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/story/migrations/0026_alter_post_image.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/story/migrations/0027_alter_post_published_date.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/story/migrations/0028_alter_post_published_date.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/story/migrations/0029_alter_post_published_date.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/story/migrations/0030_alter_post_published_date.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/story/migrations/0031_alter_post_published_date.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/story/migrations/__init__.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/story/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/story/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/story/static/css/story.css" beforeDir="false" afterPath="$PROJECT_DIR$/story/static/css/story.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/story/templates/story/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/story/templates/story/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story/templates/story/home.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/story/templates/story/post_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/story/templates/story/post_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/story/templates/story/post_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/story/templates/story/post_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/story/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/story/urls.py" afterDir="false" />
@@ -113,13 +73,19 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Mysite2033" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/venv/Lib/site-packages/haystack/admin.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/media/images" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Mikhail\PycharmProjects\Mysite_2022" />
       <recent name="C:\Users\Mikhail\PycharmProjects\Mysite_2022\media\images" />
+      <recent name="C:\Users\Mikhail\PycharmProjects\Mysite_2022" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Mikhail\PycharmProjects\Mysite_2022" />
+      <recent name="C:\Users\Mikhail\PycharmProjects\Mysite_2022\solr-8.11.1\server\solr" />
+      <recent name="C:\Users\Mikhail\PycharmProjects\Mysite_2022\solr-8.11.1\server" />
     </key>
   </component>
   <component name="RunManager">
@@ -213,7 +179,22 @@
       <workItem from="1644811518962" duration="1090000" />
       <workItem from="1644816970999" duration="187000" />
       <workItem from="1644817182580" duration="269000" />
-      <workItem from="1644817575541" duration="2082000" />
+      <workItem from="1644817575541" duration="16847000" />
+      <workItem from="1644904717315" duration="6342000" />
+      <workItem from="1644936112846" duration="5407000" />
+      <workItem from="1644981565872" duration="64000" />
+      <workItem from="1644983819276" duration="1447000" />
+      <workItem from="1644985353445" duration="2933000" />
+      <workItem from="1645003501839" duration="8046000" />
+      <workItem from="1645015312869" duration="2416000" />
+      <workItem from="1645028462343" duration="225000" />
+      <workItem from="1645093575562" duration="2689000" />
+      <workItem from="1645169078543" duration="373000" />
+      <workItem from="1645169487390" duration="553000" />
+      <workItem from="1645170126736" duration="1250000" />
+      <workItem from="1645179998424" duration="2352000" />
+      <workItem from="1645190621618" duration="2474000" />
+      <workItem from="1645193569421" duration="23779000" />
     </task>
     <servers />
   </component>
@@ -241,27 +222,39 @@
       <screen x="0" y="0" width="1280" height="672" />
     </state>
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.672/-1920.0.1920.1032@0.0.1280.672" timestamp="1644591462175" />
+    <state x="-1201" y="318" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1645008041372">
+      <screen x="-1920" y="0" width="1920" height="1032" />
+    </state>
+    <state x="-1201" y="318" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.672/-1920.0.1920.1032@-1920.0.1920.1032" timestamp="1645008041372" />
     <state x="93" y="93" width="1095" height="487" key="DiffContextDialog" timestamp="1643130378871">
       <screen x="0" y="0" width="1280" height="672" />
     </state>
     <state x="93" y="93" width="1095" height="487" key="DiffContextDialog/0.0.1280.672@0.0.1280.672" timestamp="1643130378871" />
-    <state x="-1288" y="141" key="FileChooserDialogImpl" timestamp="1644818353081">
-      <screen x="-1920" y="0" width="1920" height="1032" />
-    </state>
-    <state x="-1288" y="141" key="FileChooserDialogImpl/0.0.1280.672/-1920.0.1920.1032@-1920.0.1920.1032" timestamp="1644818353081" />
-    <state x="393" y="183" key="FileChooserDialogImpl/0.0.1280.672/-1920.0.1920.1032@0.0.1280.672" timestamp="1644590252273" />
-    <state x="142" y="0" key="SettingsEditor" timestamp="1644663442600">
+    <state x="393" y="156" key="FileChooserDialogImpl" timestamp="1644987863262">
       <screen x="0" y="0" width="1280" height="672" />
     </state>
-    <state x="142" y="0" key="SettingsEditor/0.0.1280.672/-1920.0.1920.1032@0.0.1280.672" timestamp="1644663442600" />
+    <state x="-1288" y="141" key="FileChooserDialogImpl/0.0.1280.672/-1920.0.1920.1032@-1920.0.1920.1032" timestamp="1644818353081" />
+    <state x="393" y="156" key="FileChooserDialogImpl/0.0.1280.672/-1920.0.1920.1032@0.0.1280.672" timestamp="1644987863262" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1645276910917">
+      <screen x="0" y="0" width="1280" height="672" />
+    </state>
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.672/-1920.0.1920.1032@0.0.1280.672" timestamp="1645276910917" />
     <state x="142" y="0" key="SettingsEditor/0.0.1280.672@0.0.1280.672" timestamp="1644654869448" />
     <state x="402" y="34" key="VCS.ChangeListViewerDialog" timestamp="1643130288484">
       <screen x="0" y="0" width="1280" height="672" />
     </state>
     <state x="402" y="34" key="VCS.ChangeListViewerDialog/0.0.1280.672@0.0.1280.672" timestamp="1643130288484" />
+    <state x="450" y="251" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1645014807281">
+      <screen x="0" y="0" width="1280" height="672" />
+    </state>
+    <state x="450" y="251" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.672/-1920.0.1920.1032@0.0.1280.672" timestamp="1645014807281" />
     <state x="-984" y="0" width="1000" height="593" maximized="true" key="dock-window-1" timestamp="1644586182531">
       <screen x="-1920" y="0" width="1920" height="1032" />
     </state>
     <state x="-984" y="0" width="1000" height="593" maximized="true" key="dock-window-1/0.0.1280.672/-1920.0.1920.1032@0.0.1280.672" timestamp="1644586182531" />
+    <state x="303" y="-1" width="672" height="678" key="search.everywhere.popup" timestamp="1645344822350">
+      <screen x="0" y="0" width="1280" height="672" />
+    </state>
+    <state x="303" y="-1" width="672" height="678" key="search.everywhere.popup/0.0.1280.672/-1920.0.1920.1032@0.0.1280.672" timestamp="1645344822350" />
   </component>
 </project>

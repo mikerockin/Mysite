@@ -11,7 +11,7 @@ class CommentForm(forms.ModelForm):
 
     class Meta:
         model = Comment
-        fields = ('email', 'body')
+        fields = ('name', 'email', 'body')
 
 
 class EmailPostForm(forms.Form):
@@ -20,3 +20,5 @@ class EmailPostForm(forms.Form):
     to = forms.EmailField(label='Кому')
     comments = forms.CharField(label='Комментарий', required=False, widget=forms.Textarea)
 
+class SearchForm(forms.Form):
+    query = forms.CharField(label='Что ищем?')

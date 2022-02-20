@@ -29,12 +29,15 @@ ALLOWED_HOSTS = []
 LOGIN_REDIRECT_URL = '/'
 LOGIN_URL = '/users/login/'
 
+SITE_ID = 1
+
 # Application definition
 
 INSTALLED_APPS = [
 
     'users',
     'story',
+    'taggit',
     'rest_framework',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -42,8 +45,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
+    'django.contrib.sitemaps',
     'drf_yasg',
     'rest_framework.authtoken',
+    'django.contrib.postgres',
 
 ]
 
@@ -142,6 +148,13 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'mrmikhail888@gmail.com'
-EMAIL_HOST_PASSWORD = 'yXZbRu2aFe'
+EMAIL_HOST_PASSWORD = 'yXZbRu2aFee1/'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
+
+HAYSTACK_CONNECTIONS = {
+    'default': {
+        'ENGINE': 'haystack.backends.solr_backend.SolrEngine',
+        'URL': 'http://127.0.0.1:8983/solr/blog'
+    },
+}
