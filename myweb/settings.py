@@ -11,6 +11,10 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 import os
 from pathlib import Path
+from dotenv import load_dotenv
+
+
+load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,16 +24,21 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-ces-i42ad0-ug^vd!1k2+%)+-o15)k*y=7x(_bp9j&#rthxp*4'
+
+SECRET_KEY = str(os.getenv('SECRET_KEY'))
+
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = str(os.getenv('GOOGLE_KEY'))
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = str(os.getenv('GOOGLE_SECRET'))
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = []
 LOGIN_REDIRECT_URL = '/'
-LOGIN_URL = '/users/login/'
+LOGIN_URL = '/auth/login/google-oauth2/'
+LOGOUT_REDIRECT_URL = '/'
+SOCIAL_AUTH_URL_NAMESPACE = 'social'
 
-SITE_ID = 1
 
 # Application definition
 
@@ -50,9 +59,18 @@ INSTALLED_APPS = [
     'drf_yasg',
     'rest_framework.authtoken',
     'django.contrib.postgres',
+    'crispy_forms',
+    'social_django',
 
 ]
 
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+
+AUTHENTICATION_BACKENDS = (
+    'social_core.backends.google.GoogleOAuth2',
+    'django.contrib.auth.backends.ModelBackend',
+)
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -76,12 +94,16 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'social_django.context_processors.login_redirect',
+                'social_django.context_processors.backends',
+
             ],
         },
     },
 ]
 
 WSGI_APPLICATION = 'myweb.wsgi.application'
+
 
 
 # Database
@@ -145,16 +167,9 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'mrmikhail888@gmail.com'
-EMAIL_HOST_PASSWORD = 'yXZbRu2aFee1/'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-
-HAYSTACK_CONNECTIONS = {
-    'default': {
-        'ENGINE': 'haystack.backends.solr_backend.SolrEngine',
-        'URL': 'http://127.0.0.1:8983/solr/blog'
-    },
-}
+EMAIL_HOST_USER = str(os.getenv('EMAIL_USER'))
+EMAIL_HOST_PASSWORD = str(os.getenv('EMAIL_PASSWORD'))

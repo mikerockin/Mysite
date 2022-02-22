@@ -79,7 +79,7 @@ def post_edit(request, pk):
         form = PostForm(instance=post)
     return render(request, 'story/post_edit.html', {'form': form})
 
-
+@login_required
 def post_share(request, pk):
     post = get_object_or_404(Post, pk=pk)
     sent = False
@@ -97,6 +97,7 @@ def post_share(request, pk):
         form = EmailPostForm()
     return render(request, 'story/share.html', {'post': post, 'form': form, 'sent': sent})
 
+@login_required
 def post_search(request):
     form = SearchForm()
     query = None
@@ -114,6 +115,14 @@ def post_search(request):
                    'query': query,
                    'results': results})
 
+
+def index(request):
+    context = {
+        'posts': Post.objects.order_by('-date')
+        if request.user.is_authenticated else []
+    }
+
+    return render(request, 'story/post_list.html', context)
 
 
 class PostViewSet(viewsets.ModelViewSet):

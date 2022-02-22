@@ -16,30 +16,27 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd6dcebc-a657-4fae-86c8-dc7c9e13021f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/media/images/Speeding 1x1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story/sitemaps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story/templates/story/latest_posts.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story/templates/story/pagination.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story/templates/story/search.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story/templatetags/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/story/templatetags/story_tags.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myweb/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/myweb/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myweb/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/myweb/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/story/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/story/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/story/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story/static/css/story.css" beforeDir="false" afterPath="$PROJECT_DIR$/story/static/css/story.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/story/templates/story/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/story/templates/story/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story/templates/story/post_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/story/templates/story/post_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story/templates/story/post_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/story/templates/story/post_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/story/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/story/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/story/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/templates/users/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/users/templates/users/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,19 +70,21 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="add_unversioned_files" value="$PROJECT_DIR$/venv/Lib/site-packages/haystack/admin.py" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/venv/Lib/site-packages/haystack/admin.py&#10;C:/Users/Mikhail/PycharmProjects/Mysite_2022/.env" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/media/images" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Mikhail\PycharmProjects\Mysite_2022\users" />
+      <recent name="C:\Users\Mikhail\PycharmProjects\Mysite_2022\story\templates\story" />
+      <recent name="C:\Users\Mikhail\PycharmProjects\Mysite_2022\myweb" />
+      <recent name="C:\Users\Mikhail\PycharmProjects\Mysite_2022" />
+      <recent name="C:\Users\Mikhail\PycharmProjects\Mysite_2022\solr-8.11.1\server\solr" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Mikhail\PycharmProjects\Mysite_2022\media\images" />
       <recent name="C:\Users\Mikhail\PycharmProjects\Mysite_2022" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Mikhail\PycharmProjects\Mysite_2022" />
-      <recent name="C:\Users\Mikhail\PycharmProjects\Mysite_2022\solr-8.11.1\server\solr" />
-      <recent name="C:\Users\Mikhail\PycharmProjects\Mysite_2022\solr-8.11.1\server" />
     </key>
   </component>
   <component name="RunManager">
@@ -195,6 +194,8 @@
       <workItem from="1645179998424" duration="2352000" />
       <workItem from="1645190621618" duration="2474000" />
       <workItem from="1645193569421" duration="23779000" />
+      <workItem from="1645510452582" duration="8000" />
+      <workItem from="1645519398312" duration="5294000" />
     </task>
     <servers />
   </component>
