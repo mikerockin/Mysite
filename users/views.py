@@ -24,7 +24,7 @@ def register(request):
         form = RegisterForm(data=request.POST)
         if form.is_valid():
             new_user = form.save()
-            login(request, new_user)
+            login(request, new_user, backend='django.contrib.auth.backends.ModelBackend')
             return redirect('story:post_list')
     context = {'form': form}
     return render(request, 'users/register.html', context)
