@@ -115,13 +115,12 @@ def post_search(request):
                    'query': query,
                    'results': results})
 
-
+@login_required
 def index(request):
     context = {
         'posts': Post.objects.order_by('-date')
         if request.user.is_authenticated else []
     }
-
     return render(request, 'story/post_list.html', context)
 
 

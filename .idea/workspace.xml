@@ -27,15 +27,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd6dcebc-a657-4fae-86c8-dc7c9e13021f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/users/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/templates/users/profile.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myweb/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/myweb/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myweb/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/myweb/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story/templates/story/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/story/templates/story/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/story/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/story/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/templates/users/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/users/templates/users/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,16 +73,16 @@
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Mikhail\PycharmProjects\Mysite_2022\media\images" />
+      <recent name="C:\Users\Mikhail\PycharmProjects\Mysite_2022" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Mikhail\PycharmProjects\Mysite_2022\users" />
       <recent name="C:\Users\Mikhail\PycharmProjects\Mysite_2022\story\templates\story" />
       <recent name="C:\Users\Mikhail\PycharmProjects\Mysite_2022\myweb" />
       <recent name="C:\Users\Mikhail\PycharmProjects\Mysite_2022" />
       <recent name="C:\Users\Mikhail\PycharmProjects\Mysite_2022\solr-8.11.1\server\solr" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Mikhail\PycharmProjects\Mysite_2022\media\images" />
-      <recent name="C:\Users\Mikhail\PycharmProjects\Mysite_2022" />
     </key>
   </component>
   <component name="RunManager">
@@ -195,7 +193,11 @@
       <workItem from="1645190621618" duration="2474000" />
       <workItem from="1645193569421" duration="23779000" />
       <workItem from="1645510452582" duration="8000" />
-      <workItem from="1645519398312" duration="5294000" />
+      <workItem from="1645519398312" duration="7275000" />
+      <workItem from="1645550074020" duration="162000" />
+      <workItem from="1645609664246" duration="429000" />
+      <workItem from="1645612549363" duration="1183000" />
+      <workItem from="1645766986773" duration="1520000" />
     </task>
     <servers />
   </component>
@@ -207,7 +209,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>

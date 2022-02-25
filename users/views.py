@@ -1,3 +1,4 @@
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 from django.contrib.auth import login
 from .forms import RegisterForm
@@ -8,6 +9,12 @@ from django.contrib.messages.views import SuccessMessageMixin
 
 class ResetPasswordView(SuccessMessageMixin, PasswordResetView):
     template_name = 'users/'
+
+
+@login_required
+def profile(request):
+    return render(request, 'users/profile.html')
+
 
 
 def register(request):
