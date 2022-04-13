@@ -1,12 +1,14 @@
 {% extends 'story/base.html' %}
+{% load crispy_forms_tags %}
 {% load story_tags %}
+
 
 {% block content %}
     <div class="post">
         {% if post.published_date %}
             <div class="date">
                 {{ post.published_date }}
-                <p>Автор: {{ post.author }}</p>
+                <p>Автор: <a href="{% url 'users:users-profile' %}"> {{ post.author }}</a></p>
             </div>
         {% endif %}
 
@@ -33,7 +35,9 @@
                 {{ total_comments }} comment{{ total_comments|pluralize }}
             </h4>
         {% endwith %}
+{% if user == post.author %}
         <a class="btn btn-default" href="{% url 'story:post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+{% endif %}
         <h4><p>
             <center>
                 <a href="{% url "story:post_share" post.id %}">Поделиться</a>
@@ -63,7 +67,7 @@
       Комментарий {{ forloop.counter }} оставил  {{ comment.name }} {{ comment.created }}
   </h4>
     </p>
-      <h5><p style="font-family: 'Tahoma'; " {{ comment.body|linebreaks }}</p></h5>
+      <h5><p style="font-family: 'Tahoma';"> {{ comment.body|linebreaks }}</p></h5>
   </div>
 {% empty %}
   <p>Здесь пока нет комментариев</p>
@@ -74,8 +78,8 @@
 {% else %}
   <h3>Добавить новый комментарий</h3>
   <form action="." method="post">
-    {{ comment_form.as_p }}
     {% csrf_token %}
+    {{ comment_form|crispy }}
     <p><input type="submit" value="Добавить комментарий"></p>
   </form>
 {% endif %}

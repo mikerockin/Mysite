@@ -3,6 +3,7 @@
 
 {% block content %}
   <form method="post" action="{% url 'users:register' %}">
+  <form method="POST" enctype="multipart/form-data" class="post-form">
     {% csrf_token %}
     {{ form|crispy }}
     <button name="submit">Регистрация</button>

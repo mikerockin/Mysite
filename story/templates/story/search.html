@@ -1,4 +1,5 @@
 {% extends 'story/base.html' %}
+{% load crispy_forms_tags %}
 
 {% block title %} Найти {% endblock %}
 
@@ -20,7 +21,7 @@
   {% else %}
     <h1>Поиск по историям</h1>
     <form action="." method="get">
-      {{ form.as_p }}
+        {{ form|crispy }}
       <input type="submit" value="Найти">
     </form>
   {% endif %}

@@ -3,8 +3,8 @@ from .models import Post, Comment
 
 
 class PostAdmin(admin.ModelAdmin):
-    list_display = ('title', 'text', 'author', 'image', 'published_date')
-    list_filter = ('published_date', 'author')
+    list_display = ('title', 'text', 'author',  'image', 'published_date')
+    list_filter = ('published_date', 'author', 'tags')
     search_fields = ('title', 'text')
     raw_id_fields = ('author',)
     date_hierarchy = 'published_date'
